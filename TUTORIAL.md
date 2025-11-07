@@ -66,7 +66,7 @@ python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}')"
 3. Click **Request download**
 4. **Format**: Select **JSON** (not HTML!)
 5. **Date range**: All time
-6. **Media quality**: Not needed (we only use text)
+6. **Media quality**: Not needed (only need text)
 7. Wait for email (can take 24-48 hours)
 8. Download and **extract the ZIP file**
 
