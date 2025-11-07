@@ -74,8 +74,8 @@ This project follows a complete ML pipeline:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Isaac-Abell/artificial-isaac.git
-cd artificial-isaac
+git clone https://github.com/Isaac-Abell/AI-Artifical-Isaac.git
+cd AI-Artifical-Isaac
 
 # Create virtual environment
 python -m venv venv
@@ -112,7 +112,7 @@ The project uses these key libraries (see `requirements.txt` for full list):
 ## 📁 Project Structure
 
 ```
-artificial-isaac/
+AI-Artifical-Isaac/
 │
 ├── data/                          # Raw data (gitignored)
 │   ├── whatsapp/                  # WhatsApp .txt exports

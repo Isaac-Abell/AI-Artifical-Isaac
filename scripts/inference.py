@@ -15,6 +15,7 @@ from config import (
     CHROMA_DB_DIR,
     RAG_COLLECTION_NAME,
     RAG_N_RESULTS,
+    MAX_RAG_CONTEXT_TOKENS,
     INFERENCE_MAX_TOKENS,
     INFERENCE_TEMPERATURE,
     INFERENCE_TOP_P
@@ -112,13 +113,13 @@ def generate_response(
     return response
 
 
-# ----------------- Isaac Bot Terminal Chat -----------------
-def isaac_bot_chat(
+# ----------------- Terminal Chat -----------------
+def you_bot_chat(
     model,
     tokenizer,
     max_tokens=INFERENCE_MAX_TOKENS,
     top_rag=RAG_N_RESULTS,
-    max_rag_tokens=1000,
+    max_rag_tokens=MAX_RAG_CONTEXT_TOKENS,
 ):
     conversation_history = []
     print("=" * 80)
@@ -174,11 +175,11 @@ def isaac_bot_chat(
         response = response.strip()
 
         # Print and add to history
-        print("\nIsaac Bot: " + "\n".join(textwrap.wrap(response, width=120)) + "\n")
+        print("\You Bot: " + "\n".join(textwrap.wrap(response, width=120)) + "\n")
         conversation_history.append({"role": "assistant", "content": response})
 
 
 # ----------------- Run -----------------
 if __name__ == "__main__":
     model, tokenizer = load_model()
-    isaac_bot_chat(model, tokenizer)
+    you_bot_chat(model, tokenizer)

@@ -75,6 +75,7 @@ QUANT_TYPE = "nf4"        # Quantization type
 # ==============================
 
 RAG_COLLECTION_NAME = "rag_data"
+MAX_RAG_CONTEXT_TOKENS = 1024  # Max tokens for retrieved contexts
 RAG_N_RESULTS = 3          # Number of contexts to retrieve
 
 # ==============================

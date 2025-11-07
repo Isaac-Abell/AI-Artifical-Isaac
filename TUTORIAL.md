@@ -90,8 +90,8 @@ instagram-export/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Isaac-Abell/artificial-isaac.git
-cd artificial-isaac
+git clone https://github.com/Isaac-Abell/AI-Artifical-Isaac.git
+cd AI-Artifical-Isaac
 ```
 
 ### 2. Create Virtual Environment
