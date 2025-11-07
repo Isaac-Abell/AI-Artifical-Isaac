@@ -21,7 +21,6 @@ This guide walks you through every step of creating your personal AI chatbot.
 
 **Recommended:**
 - GPU: NVIDIA RTX 4080 or better (16GB+ VRAM)
-- RAM: 64GB system RAM
 
 ### Software Requirements
 
