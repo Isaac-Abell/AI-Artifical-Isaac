@@ -307,7 +307,7 @@ python scripts/clean_and_merge.py
 Training will:
 1. Load Qwen 2.5 7B model (in 4-bit precision)
 2. Add LoRA adapters (trainable parameters)
-3. Train for 5 epochs (~2-6 hours depending on GPU)
+3. Train for 5 epochs (~6-12 hours depending on GPU)
 4. Save checkpoints after each epoch
 
 ### Start Training
@@ -349,6 +349,7 @@ Look for:
 **Training Loss:**
 - Should decrease over time
 - Typical final loss: 2.0-2.5
+- If loss is less than this, your model might have overfit
 - If loss doesn't decrease: learning rate might be too high/low
 
 ### Checkpoint Selection
