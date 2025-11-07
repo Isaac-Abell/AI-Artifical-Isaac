@@ -564,11 +564,10 @@ python scripts/setup_rag.py
 
 After successfully training your model:
 
-1. **Experiment with prompts** in interactive mode
+1. **Experiment with prompts**
 2. **Test different checkpoints** to find your favorite
 3. **Expand your RAG knowledge base** with more personal info
 4. **Fine-tune hyperparameters** for your specific use case
-5. **Share your results** (but not your data!)
 
 ---
 
