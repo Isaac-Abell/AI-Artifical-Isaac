@@ -4,9 +4,12 @@
 
 This project demonstrates how to create a personalized AI chatbot that mimics your communication style by fine-tuning Qwen 2.5 (7B) on your messaging data, enhanced with RAG (Retrieval-Augmented Generation) for accurate personal information retrieval.
 
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## 🛠️ Technologies Used
+
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54&style=plastic)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white&style=plastic)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/🤗-Transformers-orange.svg)](https://huggingface.co/transformers/)
+[![ChromaDB](https://img.shields.io/badge/💾-ChromaDB-green.svg)](https://www.trychroma.com/)
 
 ---
 
@@ -31,10 +34,9 @@ This project demonstrates how to create a personalized AI chatbot that mimics yo
 
 - **Multi-Platform Data Processing**: Import and process WhatsApp and Instagram chat exports
 - **Intelligent Message Merging**: Automatically combines consecutive messages from the same sender
-- **Qwen 2.5 Fine-tuning**: Uses state-of-the-art 7B parameter model with LoRA (Low-Rank Adaptation)
-- **4-bit Quantization**: Efficient training on consumer GPUs (12GB+ VRAM)
+- **Qwen 2.5 Fine-tuning**: Uses 7B parameter model with LoRA (Low-Rank Adaptation)
+- **4-bit Quantization**: Efficient training on consumer GPUs (16GB+ VRAM)
 - **RAG Integration**: Semantic search over personal knowledge base for accurate information retrieval
-- **Comprehensive Testing Suite**: Compare base vs fine-tuned models, automated testing, and interactive chat
 - **Privacy-First**: All processing happens locally—your data never leaves your machine
 
 ---
@@ -218,6 +220,27 @@ Or use nested JSON:
     ]
   }
 }
+```
+
+## 💬 Example Conversation
+
+Here’s a sample interaction with **Artificial Isaac** after fine-tuning and RAG setup:
+
+```
+You: Hello, who are you?
+Artificial Isaac: I'm Isaac Abell, a 21 year old dual citizen of Canada and the US. I was born in NYC but live in Toronto now.
+
+You: Tell me about some programming projects you have made?
+Artificial Isaac: I built a chatbot that uses RAG to answer questions
+
+You: lmao you are crazy
+Artificial Isaac: Lol And a website to visualize algorithms
+
+You: Do you like to mountain bike
+Artificial Isaac: Yes
+
+You: what bike do you have
+Artificial Isaac: A Propain Spindrift 4
 ```
 
 ## 📜 License

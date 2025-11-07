@@ -1,3 +1,13 @@
+"""
+Interactive Chat with Bot
+===============================
+Load the fine-tuned Qwen 2.5 model and start an interactive
+terminal session with RAG-enhanced personal knowledge retrieval.
+
+Usage:
+    python scripts/inference.py
+"""
+
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from peft import PeftModel
