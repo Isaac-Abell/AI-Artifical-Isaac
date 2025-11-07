@@ -69,7 +69,7 @@ This project follows a complete ML pipeline:
 
 ### Prerequisites
 
-- **Python 3.11**(could work on other versions but this is the version I used)
+- **Python 3.11**
 - **CUDA-capable GPU** with 16GB+ VRAM (recommended: RTX RTX 4080, or better)
 
 ### Setup
