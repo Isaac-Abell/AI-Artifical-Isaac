@@ -1,0 +1,19 @@
+# Core ML Libraries
+transformers>=4.40.0
+accelerate
+peft
+bitsandbytes
+datasets
+
+# Data Processing
+pandas
+numpy
+whatstk
+
+# RAG & Vector Database
+chromadb
+sentence-transformers
+
+# Utilities
+tqdm
+python-dotenv
