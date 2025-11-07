@@ -452,7 +452,7 @@ Indexing RAG Data
 Best for casual exploration:
 
 ```bash
-python scripts/inference.py --mode interactive
+python scripts/inference.py
 ```
 
 ```
