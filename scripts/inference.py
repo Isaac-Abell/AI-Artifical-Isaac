@@ -185,7 +185,7 @@ def you_bot_chat(
         response = response.strip()
 
         # Print and add to history
-        print("\You Bot: " + "\n".join(textwrap.wrap(response, width=120)) + "\n")
+        print("Assistant: " + "\n".join(textwrap.wrap(response, width=120)) + "\n")
         conversation_history.append({"role": "assistant", "content": response})
 
 
