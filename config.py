@@ -65,7 +65,7 @@ EPOCHS = 4
 LEARNING_RATE = 2e-5
 MAX_LENGTH = 3072          # Maximum sequence length
 USE_BF16 = True           # Use bfloat16 precision
-
+WARMUP_STEPS = 50         # Number of warmup steps
 # Quantization
 USE_4BIT = True           # Enable 4-bit quantization
 QUANT_TYPE = "nf4"        # Quantization type

@@ -32,6 +32,7 @@ from config import (
     EPOCHS,
     GRADIENT_ACCUMULATION_STEPS,
     LEARNING_RATE,
+    WARMUP_STEPS,
     USE_BF16,
     USE_4BIT,
     QUANT_TYPE,
@@ -151,7 +152,7 @@ def main(
     print("🚀 Starting training...")
     training_args = TrainingArguments(
         output_dir=str(output_dir),
-        warmup_steps=50,
+        warmup_steps=WARMUP_STEPS,
         per_device_train_batch_size=BATCH_SIZE,
         gradient_accumulation_steps=GRADIENT_ACCUMULATION_STEPS,
         gradient_checkpointing=True,
